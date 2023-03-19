@@ -9,7 +9,7 @@ Here the ,1 was used to get the temprature values in celsius.
 
 # Supported microcontrollers
 1) ATmega168A
-2) ATmega168P
+2) ATmega168P (Arduino diecimilia)
 3) ATmega328
-4) ATmega328P
+4) ATmega328P (Arduino nano, uno, duemilanove)
 5) ATmega32U4 (Arduino Micro).
