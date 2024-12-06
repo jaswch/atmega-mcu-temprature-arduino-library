@@ -6,16 +6,18 @@
  * 
  * Note only these following microcontrollers 
  * support an internal temprature sensor:
- * ATmega168A,ATmega168P,ATmega328,ATmega328P,
- * ATmega32U4 (Arduino Micro).
+ * ATmega168A,ATmega168P,ATmega328,ATmega328P & ATmega32U4
  * 
- * 
+ * created on 1 Nov 2022
+ * By Jaswanth Venkata Sai Chennu
+ * modified on 6 Dec 2024
+ * By Jaswanth Venkata Sai Chennu
  */
-#include <AVR_CPU_Temprature.h>                                 //initialize the library
+//include the library
+#include <AVR_CPU_Temprature.h>                                 
 
 void setup() {
   Serial.begin(9600);
-  //Using the "F" macro to save space in our lovely SRAM!
   Serial.println(F("Internal Temperature Sensor"));
 }
 
@@ -23,5 +25,5 @@ void loop() {
   //print the temprature in celsius
   Serial.print(CPUTemp(), 1);
   Serial.println("*C");
-  delay(1000);                  //delay between each read for stability
+  delay(1000);
 }
