@@ -4,7 +4,7 @@
 
 float CPUTemp() {
   unsigned int wADC;
-  double t;
+  double temperature;
 
   ADMUX = (_BV(REFS1) | _BV(REFS0) | _BV(MUX3));
   ADCSRA |= _BV(ADEN);  
@@ -14,5 +14,5 @@ float CPUTemp() {
   while (bit_is_set(ADCSRA,ADSC));
   wADC = ADCW;
   t = (wADC - 324.31 ) / 1.22;
-  return(t);
+  return(temperature);
 }
