@@ -10,3 +10,15 @@ Checkout the example sketch in the examples folder.
 3) ATmega328
 4) ATmega328P (Arduino Nano, Uno & Duemilanove)
 5) ATmega32U4 (Arduino Micro and Leonardo).
+
+# Documentation
+
+## CPUTemp()
+Description: 
+Gets the temperature value
+
+Syntax: 
+`CPUTemp()`
+
+Returns:
+`float`
