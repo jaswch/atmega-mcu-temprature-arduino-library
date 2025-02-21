@@ -1,11 +1,10 @@
 /*
  * CPU_Temprature
- * Reads the temprature of the avr microcontroller
+ * Reads the temprature of an megaAVR microcontroller
  * 
  * No circuit needed.
  * 
- * Note only these following microcontrollers 
- * support an internal temprature sensor:
+ * Note only these following microcontrollers support the library:
  * ATmega168A,ATmega168P,ATmega328,ATmega328P & ATmega32U4
  * 
  * created on 1 Nov 2022
